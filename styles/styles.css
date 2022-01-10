@@ -20,6 +20,16 @@ h1 {
   text-shadow: 3px 3px 1px black;
 }
 
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
 .header {
   padding: 60px;
   text-align: center;
@@ -27,9 +37,21 @@ h1 {
   color: darkred;
   font-size: 30px;
 }
+.bottom_menu{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #A2A4A3;
+  }
 
 .image {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#menu {
+
 }
