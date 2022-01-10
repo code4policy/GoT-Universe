@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="styles/styles.css" rel="stylesheet">
 	<title>Awesome GoT-Site</title>
+
+	<script src="scripts/d3.min.js"></script>
 </head>
 <body>
 	<h1 class="header">
@@ -51,6 +53,39 @@
 	</center>
 
 	<br><br><br>
+
+
+	<center>
+	<h1>Main Characters</h1>
+	</center>
+	
+	<ul id="characters">
+		
+	</ul>
+
+	<script type="text/javascript">
+
+		d3.csv("data/main_chars.csv")
+
+			//loaded correctly
+			.then(function(input_data) {
+
+				for (let i = 0; i < input_data["columns"].length; i++) {
+					d3.select("#characters").append("li").text(input_data["columns"][i]);
+				}
+
+			})
+
+			//error loading
+			.catch(function(error) {
+				console.log("Error loading csv")
+			})
+
+	</script>
+
+
+
+
 
 
 
