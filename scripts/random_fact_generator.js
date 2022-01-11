@@ -13,6 +13,5 @@ var facts = [
 
 function newFact() {
   var randomNumber = Math.floor(Math.random() * (facts.length));
-  console.log(randomNumber)
   document.getElementById('factDisplay').innerHTML = facts[randomNumber];
 }
