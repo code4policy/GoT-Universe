@@ -29,8 +29,7 @@ function changeImage() {
 		img.src = "images/Cobra.jpg"
 		vid.src = "https://www.youtube.com/embed/x8eRMQtjCBE"
 		alert('This dojo has been taken over by COBRA KAI')
-		}
-	else {
+		}	else {
 		img.src = "images/GoT_Banners.jpg"
 		alert('The great houses of Westeros have succesfully reclaimed their dominion.')
 	}
