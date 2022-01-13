@@ -21,17 +21,21 @@ function update_house_text(house_name) {
 }
 
 
+let GoT_showing = true
 
 function changeImage() {
-	var img = document.getElementById("Banner");
-	var vid = document.getElementById("Cobra_Video")
-	if (img.src.match("GoT")) {
+	var img = document.getElementById("banner");
+	var vid = document.getElementById("cobra_video")
+	if (GoT_showing) {
+		GoT_showing = false
 		img.src = "images/Cobra.jpg"
 		vid.src = "https://www.youtube.com/embed/x8eRMQtjCBE"
-		alert('This dojo has been taken over by COBRA KAI')
-		}	else {
+		//alert('This dojo has been taken over by COBRA KAI')
+	} else {
+		GoT_showing = true
 		img.src = "images/GoT_Banners.jpg"
-		alert('The great houses of Westeros have succesfully reclaimed their dominion.')
+		vid.src = "https://www.youtube.com/embed/KPLWWIOCOOQ"
+		//alert('The great houses of Westeros have succesfully reclaimed their dominion.')
 	}
 
 	
