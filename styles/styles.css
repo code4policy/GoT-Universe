@@ -1,6 +1,6 @@
 html {
-  color: crimson;
-  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
+  color: floralwhite;
+  font-size: 14px; /* px means "pixels": the base font size is now 10 pixels high  */
   font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
   background-color: #b3b3b3;
 }
@@ -68,7 +68,7 @@ ul {
 }
 
 /* Top Menu change the color of links on hover */
-.top_men a:hover {
+.top_men a:hover , .dropdown:hover .dropbtn{
   background-color: ghostwhite;
   color: black;
 }
@@ -77,6 +77,48 @@ ul {
 .top_men a.current {
   background-color: black;
   color: white;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 
