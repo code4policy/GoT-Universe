@@ -11,7 +11,12 @@
 <body>
 
 	<div class="top_men">
-		<a class="current" href="index.html"> Home </a>
+		<a class="navbar-brand" href="/">
+      		<div class="logo-image">
+            <img src="images/Dragon.png" class="img-fluid">
+      		</div>
+		</a>
+		<a class= "current" href="index.html"> Home </a>
 		<a href="Test1.html">The Houses and Heroes of Westeros</a>
 			<div class="dropdown">
     			<button class="dropbtn">Dropdown 
@@ -27,14 +32,20 @@
 	</div>
 		
 	<h1 class="header">
-		Welcome to the wacky world of Game of Thrones!
+		Dragonfang: A Journey Through the World of Westeros 
 	</h1>
 	<div class="image">
 	<img src="images/GoT_Banners.jpg" id="Banner" onclick="changeImage()">
 	</div>
 	<iframe width="560" height="315" src= "https://www.youtube.com/embed/KPLWWIOCOOQ" id="Cobra_Video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
+	<div class = "factBox">
+		<h1 id="factTitle">GoT Fact of the day</h1>
+		<div id="factDisplay">
+			<!--Facts will display here -->
+		</div>
+	</div>
+	
 
 
 	<img src="images/westeros_map_fandom.png" alt="A map of the continent of Westeros">
@@ -55,7 +66,7 @@
 
   
   
-  
+  <script src="scripts/random_fact_generator.js"></script>
   <script src="scripts/main.js"></script>
 </body>
 </html>

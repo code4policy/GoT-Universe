@@ -1,3 +1,6 @@
+@font-face { font-family: GoT; src: url('Game of Thrones.ttf'); } 
+
+
 html {
   color: floralwhite;
   font-size: 14px; /* px means "pixels": the base font size is now 10 pixels high  */
@@ -20,7 +23,7 @@ body {
 h1 {
   margin: 0;
   padding:  20px 0;
-  color:  #00539F;
+  color:  whitesmoke;
   text-shadow: 3px 3px 1px black;
 }
 
@@ -38,8 +41,9 @@ ul {
   padding: 60px;
   text-align: center;
   background: #000000;
-  color: darkred;
+  color: antiquewhite;
   font-size: 30px;
+  font-family:GoT
 }
 .menu{
     display: -ms-flexbox;
@@ -49,12 +53,37 @@ ul {
     font-size: 20px;
     color: #A2A4A3;
   }
+  .factBox{
+    float: right; 
+  }
+  #factTitle{
+    text-align: center;
+    margin:  0;
+  }
+  #factDisplay{
+    background-color: darkgrey;
+    width: 350px;
+    margin: 10px;
+   text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  }
 
 /* Top Menu */
 
 /*Top Menu Background Colors*/
 .top_men {
   overflow: hidden;
+}
+
+ .logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+    background-color: whitesmoke;
 }
 
 /* Top Menu style the links inside the Menu bar */
@@ -75,10 +104,10 @@ ul {
 
 /* Add a color to the active/current link */
 .top_men a.current {
-  background-color: black;
+  background-color: darkred;
   color: white;
 }
-
+/* Top Menu dropdown elements */
 .dropdown {
   float: left;
   overflow: hidden;
@@ -120,7 +149,7 @@ ul {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+/*top menu end */
 
 .image {
   display: block;
