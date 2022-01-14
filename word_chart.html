@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Main Characters</title>
+	<link href="styles/style.css" rel="stylesheet">
+
+ 	<script src="https://d3js.org/d3.v4.js"></script>
+
+</head>
+<body>
+
+	<div class="top_men">
+		<a class="navbar-brand" href="/">
+      		<div class="logo-image">
+            <img src="images/Dragon.png" class="img-fluid">
+      		</div>
+		</a>
+		<a href="index.html"> Home </a>
+		<a href="Test1.html">The Houses and Heroes of Westeros</a>
+			<div class= "current" class="dropdown">
+    			<button class="dropbtn">Beyond the Wall 
+      				<i class="fa fa-caret-down"></i>
+    			</button>
+    			<div class="dropdown-content">
+      				<a href="word_chart.html">Who is the main character?</a>
+      				<a href="heatmap.html">Favourite Character Pairings</a>
+      				<a href="#">Death!</a>
+    			</div>
+    		</div>
+    	<a href="TestQuoteGenerator.html">Trivia</a>	
+	</div>
+		
+	<h1 class="header">
+		Main Characters
+	</h1>
+	<br><br><br><br>
+
+	<p>Who is the most important Game of Thrones character?</p>
+	<p>Words spoken per season.  <div id="which_season"></div></p>
+
+	<button id="start" onclick="update(data_all)">All Seasons</button>
+	<button onclick="update(data_1)">Season 1</button>
+	<button onclick="update(data_2)">Season 2</button>
+	<button onclick="update(data_3)">Season 3</button>
+	<button onclick="update(data_4)">Season 4</button>
+	<button onclick="update(data_5)">Season 5</button>
+	<button onclick="update(data_6)">Season 6</button>
+	<button onclick="update(data_7)">Season 7</button>
+	<button onclick="update(data_8)">Season 8</button>
+
+	<div id="word_char_chart"></div>
+	<p>Data adopted from Jeffrey Lancaster's <a href="https://github.com/jeffreylancaster/game-of-thrones/tree/master/data">GitHub repository</a> of Game of Thrones data.</p>
+	<p>Plot generation adopted from multiple D3-Graph-Gallery examples <a href="https://www.d3-graph-gallery.com/graph/barplot_button_data_hard.html">here </a> and <a href="https://www.d3-graph-gallery.com/graph/barplot_horizontal.html">here </a></p>
+
+
+	
+	<script src="scripts/word_chart.js"></script>
+
+	<script>
+		setTimeout(function(){
+			update(data_all)
+		}, 50); 
+	</script>
+
+</body>
+</html>
