@@ -33,7 +33,7 @@ function changeImage() {
 		//alert('This dojo has been taken over by COBRA KAI')
 	} else {
 		GoT_showing = true
-		img.src = "images/GoT_Banners.jpg"
+		img.src = "images/dubrovnik.jpg"
 		vid.src = "https://www.youtube.com/embed/KPLWWIOCOOQ"
 		//alert('The great houses of Westeros have succesfully reclaimed their dominion.')
 	}
