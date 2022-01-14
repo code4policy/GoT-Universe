@@ -70,7 +70,7 @@ ul {
   }
   #factDisplay{
     background-color: darkgrey;
-    width: 350px;
+    width: 80%;
     margin: 10px;
    text-align: center;
     line-height: 20px;
@@ -204,4 +204,7 @@ ul {
 #TrailerTitle{
   text-align: center;
     margin:  0;
+}
+#home_map{
+  width: 100%;
 }
