@@ -70,7 +70,7 @@ ul {
   }
   #factDisplay{
     background-color: darkgrey;
-    width: 350px;
+    width: 80%;
     margin: 10px;
    text-align: center;
     line-height: 20px;
@@ -197,11 +197,14 @@ ul {
 
 #banner {
   display: block;
-  width: 96.5vw;
+  width: 100%;
   height: 20vh;
   object-fit: cover;
   }
 #TrailerTitle{
   text-align: center;
     margin:  0;
+}
+#home_map{
+  width: 100%;
 }
