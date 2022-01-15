@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Death!</title>
+	<link href="styles/styles.css" rel="stylesheet">
+
+ 	<script src="https://d3js.org/d3.v4.js"></script>
+
+</head>
+<body>
+
+	<div class="top_men">
+		<a class="navbar-brand" href="/">
+      		<div class="logo-image">
+            <img src="images/Dragon.png" class="img-fluid">
+      		</div>
+		</a>
+		<a href="index.html"> Home </a>
+		<a href="heroes.html">Houses and Heroes</a>
+			<div class="dropdown">
+    			<button class="dropbtn" style="background-color:darkred">Beyond the Wall 
+      				<i class="fa fa-caret-down"></i>
+    			</button>
+    			<div class="dropdown-content">
+      				<a href="word_chart.html">Main Characters</a>
+      				<a href="heatmap.html">Relationships</a>
+      				<a href="death_epi.html">Death by Episode</a>
+      				<a href="death_cat.html">Death by Category</a>
+      				<a href="death_loc.html">Death by Location</a>
+    			</div>
+    		</div>
+    	<a href="TestQuoteGenerator.html">Trivia</a>	
+	</div>
+		
+	<h1 class="header"><br>
+		Death, by Location
+	</h1>
+
+	<br><br>
+		<!-- Create a div where the graph will take place -->
+		<div id="my_deathvisualization"></div>
+	
+<script src="scripts/deathanalysis.js"></script>
+
+	
+
+</body>
+</html>
+
