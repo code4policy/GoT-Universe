@@ -43,7 +43,7 @@ ul {
 }
 
 .header {
-  padding: 60px;
+  padding: 40px;
   text-align: center;
   background: #000000;
   color: antiquewhite;
@@ -93,6 +93,12 @@ ul {
     overflow: hidden;
     margin-top: -6px;
     background-color: whitesmoke;
+}
+
+/*to fix the top left image*/
+.img-fluid {
+    width: 46px;
+    height: 46px;
 }
 
 /* Top Menu style the links inside the Menu bar */
