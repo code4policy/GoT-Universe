@@ -5,7 +5,7 @@
 
 
 // set the dimensions and margins of the graph
-var margin = {top: 60, right: 30, bottom: 150, left: 150},
+var margin = {top: 20, right: 20, bottom: 190, left: 150},
 	width = 800 - margin.left - margin.right,
 	height = 750 - margin.top - margin.bottom;
 
@@ -134,22 +134,22 @@ d3.csv("data/scene_interactions.csv", function(data) {
 })
 
 
-// Add title to graph
-svg.append("text")
-        .attr("x", 0)
-        .attr("y", -30)
-        .attr("text-anchor", "left")
-        .style("font-size", "22px")
-        .style("fill", "black")
-        .text("Game of Thrones Interactions");
+// // Add title to graph
+// svg.append("text")
+//         .attr("x", 0)
+//         .attr("y", -30)
+//         .attr("text-anchor", "left")
+//         .style("font-size", "22px")
+//         .style("fill", "black")
+//         .text("Game of Thrones Interactions");
 
-// Add subtitle to graph
-svg.append("text")
-        .attr("x", 0)
-        .attr("y", -15)
-        .attr("text-anchor", "left")
-        .style("font-size", "14px")
-        .style("fill", "grey")
-        .style("max-width", 400)
-        .text("Who shares screentime by total shared scenes");
+// // Add subtitle to graph
+// svg.append("text")
+//         .attr("x", 0)
+//         .attr("y", -15)
+//         .attr("text-anchor", "left")
+//         .style("font-size", "14px")
+//         .style("fill", "grey")
+//         .style("max-width", 400)
+//         .text("Who shares screentime by total shared scenes");
 
