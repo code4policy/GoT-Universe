@@ -50,7 +50,7 @@ ul {
   font-size: 30px;
   font-family:GoT
 }
-.menu{
+.menu {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -58,26 +58,26 @@ ul {
     font-size: 20px;
     color: #A2A4A3;
   }
-  .factBox{
+
+.factBox{
     float: ; 
     text-align: center;
-    
-  }
-  #factTitle{
+}
+#factTitle{
     text-align: center;
     margin:  0;
      font-family:GoT;
-  }
-  #factDisplay{
-    background-color: darkgrey;
-    width: 80%;
-    margin: 10px;
-   text-align: center;
-    line-height: 20px;
-    font-size: 14px;
-    align-content: center;
-  }
-  }
+}
+#factDisplay{
+  background-color: darkgrey;
+  width: 80%;
+  margin: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  align-content: center;
+}
+}
 
 /* Top Menu */
 
@@ -214,3 +214,17 @@ ul {
 #home_map{
   width: 100%;
 }
+
+
+
+/*Chart styles*/
+.chart_title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.chart_sub_title {
+  font-size: 20px
+}
+
+

@@ -11,6 +11,7 @@
 
 var num_chars = 20
 
+var seas_messages = ['All Seasons', 'Season 1', 'Season 2', 'Season 3', 'Season 4', 'Season 5', 'Season 6', 'Season 7', 'Season 8']
 
 //LOAD JSON DATA and create data structures as appropriate
 
@@ -131,7 +132,7 @@ d3.json("data/all_char_word_counts.json", function(json_data) {
 //NOW COMBINE the different tutorials
 
 // set the dimensions and margins of the graph
-var margin = {top: 30, right: 30, bottom: 70, left: 120},
+var margin = {top: 15, right: 30, bottom: 20, left: 120},
 width = 800 - margin.left - margin.right,
 height = 500 - margin.top - margin.bottom;
 
@@ -173,7 +174,7 @@ var yAxis = svg.append("g")
 
 
 // A function that create / update the plot for a given variable:
-function update(data, season) {
+function update(data, seas_num) {
 
 
 	// // Update the X axis
@@ -238,6 +239,13 @@ function update(data, season) {
  //    	.exit()
  //    	.remove()
 
+
+
+ 	// update message for which season we are looking at
+ 	
+ 	console.log(seas_messages[seas_num])
+ 	document.getElementById("which_season").innerHTML = "Total words spoken for " + seas_messages[seas_num]
+
 };
 
 
@@ -246,7 +254,7 @@ function update(data, season) {
 
 
 // Initialize the plot with the first dataset
-console.log("make initial data call to generate");
-update(data_all);
+//console.log("make initial data call to generate");
+//update(data_all);
 
 
