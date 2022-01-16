@@ -40,3 +40,37 @@ function changeImage() {
 
 	
 }
+
+//Adjust Box Sizes by longest box
+function boxheight() {
+	var right=$("#rightbox").height();
+	var left=$("#leftbox").height();
+	var middle=$("#middlebox").height();
+	if(left>right)
+	{
+	    if(left>middle)
+	    {
+	    	$("#middlebox").height(left);
+			$("#rightbox").height(left);
+		}
+		else
+		{	
+			$("#leftbox").height(middle);
+			$("#rightbox").height(middle);
+		}
+	}
+	else
+	{
+	    if(right>middle)
+	    {
+	    	$("#middlebox").height(right);
+			$("#leftbox").height(right);
+		}
+		else
+		{	
+			$("#leftbox").height(middle);
+			$("#rightbox").height(middle);
+
+		}
+	}
+}

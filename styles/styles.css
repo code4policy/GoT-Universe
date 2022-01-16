@@ -172,10 +172,15 @@ ul {
   box-sizing: border-box;
 }
 
-.box {
+ .box {
   float: left;
   width: 33.33%;
+  heigth:  auto;
   padding: 50px;
+}
+#leftbox #rightbox #middlebox
+{
+  height: auto;
 }
 
 .clearfix::after {

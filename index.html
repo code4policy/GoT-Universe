@@ -8,7 +8,7 @@
 	<title>Awesome GoT-Site</title>
 
 </head>
-<body>
+<body onload="boxheight()" onresize="boxheight()">
 
 	<div class="top_men">
 		<a class="navbar-brand" href="/">
@@ -47,14 +47,14 @@
 	</div>
 
 <div class="clearfix">
-  <div class="box" style="background-color:#bbb">
+  <div class="box" id ="leftbox" style="background-color:#bbb">
   <h2 class = "BoxTitle">Want to join the Night's Watch?</h2>
   <p>You are new to Game of Thrones. Diving into this epic 8-season series can feel intimidating. Start with the basics:</p>
 	<p><ul><li>Read up on the <a href="heroes.html">great houses of Westeros</a></li></ul></p>
 	<p><ul><li>Learn about the <a href="heroes.html">primary characters</a></li></ul></p>
 	<p><ul><li>Explore the <a href="map.html">geography</a> of Game of Thrones</li></ul></ul></p>
   </div>
-  <div class="box" style="background-color:#ccc">
+  <div class="box" id="middlebox" style="background-color:#ccc">
 
   <h2 class = "BoxTitle">Already part of the Kingsguard?</h2>
   <p>You already love the show and want to dive deeper. Check out our beyond the wall analysis:</p>
@@ -62,14 +62,14 @@
 	 <p><ul><li><a href="heatmap.html">Relationship map</a></li></ul></p>
    <p><ul><li>Death analysis by <a href="death_epi.html">episode</a>, <a href="death_cat.html">category</a>, and <a href="death_loc.html">location</a> </li></ul></p>
   </div>
-  <div class="box" style="background-color:#ddd">
+  <div class="box" id="rightbox" style="background-color:#ddd">
   <div class = "factBox">
 		<h2 id="factTitle">GoT Fact of the day</h2>
 		<p><div id="factDisplay">
 			<!--Facts will display here -->
 </div></p>
 
-<button onclick="newFact()">New Fact</button>
+<button onclick="newFact();boxheight()">New Fact</button>
 	
 	<script src="scripts/random_fact_generator.js"></script>
 	
@@ -77,31 +77,11 @@
   </div>
 </div>
 
-	
-	
-	
 
 
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <script src="scripts/random_fact_generator.js"></script>
+	 <script src="scripts/random_fact_generator.js"></script>
   <script src="scripts/main.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 <br><br>
 	<iframe width= 100% height="315" src="https://www.youtube.com/embed/KPLWWIOCOOQ" id="Trailer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
