@@ -1,89 +1,20 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="styles/styles.css" rel="stylesheet">
-	<title>Awesome GoT-Site</title>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<!--<link href="styles/styles.css" rel="stylesheet">-->
+	<link href="styles/hero-banner.css" rel="stylesheet">
+	<title></title>
 </head>
-<body onload="boxheight()" onresize="boxheight()">
+<body>
 
-	<div class="top_men">
-		<a class="navbar-brand" href="/">
-      		<div class="logo-image">
-            <img src="images/Dragon.png" class="img-fluid">
-      		</div>
-		</a>
-		<a class= "current" href="index.html"> Home </a>
-		<a href="heroes.html">Houses and Heroes</a>
-			<div class="dropdown">
-    			<button class="dropbtn">Beyond the Wall 
-      				<i class="fa fa-caret-down"></i>
-    			</button>
-    			<div class="dropdown-content">
-
-      				<a href="word_chart.html">Main Characters</a>
-      				<a href="heatmap.html">Relationships</a>
-      				<a href="death_epi.html">Death by Episode</a>
-      				<a href="death_cat.html">Death by Category</a>
-      				<a href="death_loc.html">Death by Location</a>
-
-    			</div>
-    		</div>
-    	<a href="map.html">Map</a>	
-	</div>
-		
-	<h1 class="header"><br>
-		Welcome to Westeros: Your Guide to Game of Thrones
-	</h1>
-
-
-
-
-	<div class="image" >
-		<img id="banner" src="images/dubrovnik.jpg"  onclick="changeImage()">
-	</div>
-
-<div class="clearfix">
-  <div class="box" id ="leftbox" style="background-color:#bbb">
-  <h2 class = "BoxTitle">Want to join the Night's Watch?</h2>
-  <p>You are new to Game of Thrones. Diving into this epic 8-season series can feel intimidating. Start with the basics:</p>
-	<p><ul><li>Read up on the <a href="heroes.html">great houses of Westeros</a></li></ul></p>
-	<p><ul><li>Learn about the <a href="heroes.html">primary characters</a></li></ul></p>
-	<p><ul><li>Explore the <a href="map.html">geography</a> of Game of Thrones</li></ul></ul></p>
-  </div>
-  <div class="box" id="middlebox" style="background-color:#ccc">
-
-  <h2 class = "BoxTitle">Already part of the Kingsguard?</h2>
-  <p>You already love the show and want to dive deeper. Check out our beyond the wall analysis:</p>
-   <p><ul><li><a href="word_chart.html">Character dialogue</a> by season</li></ul></p>
-	 <p><ul><li><a href="heatmap.html">Relationship map</a></li></ul></p>
-   <p><ul><li>Death analysis by <a href="death_epi.html">episode</a>, <a href="death_cat.html">category</a>, and <a href="death_loc.html">location</a> </li></ul></p>
-  </div>
-  <div class="box" id="rightbox" style="background-color:#ddd">
-  <div class = "factBox">
-		<h2 id="factTitle">GoT Fact of the day</h2>
-		<p><div id="factDisplay">
-			<!--Facts will display here -->
-</div></p>
-
-<button onclick="newFact();boxheight()">New Fact</button>
-	
-	<script src="scripts/random_fact_generator.js"></script>
-	
-	</div>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>Welcome to the World of Westeros</h1>
+    <button onclick="window.location.href = 'home.html'">Click to enter!</button>
   </div>
 </div>
 
-
-
-	 <script src="scripts/random_fact_generator.js"></script>
-  <script src="scripts/main.js"></script>
-  
-
-<br><br>
-	<iframe width= 100% height="315" src="https://www.youtube.com/embed/KPLWWIOCOOQ" id="Trailer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
-</html>
+</html>		
