@@ -1,3 +1,6 @@
+# This script, mainly completed by Alan, helps strip out information
+# from a death database csv to determine where deaths occurred by location
+# it writes a dictionary and then populates another csv  
 
 import csv
 
