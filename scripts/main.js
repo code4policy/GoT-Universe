@@ -3,23 +3,30 @@
 
 let GoT_showing = true
 
-function changeImage() {
+function changeImage(name, message,home) {
 	var img = document.getElementById("banner");
-	var vid = document.getElementById("cobra_video")
+	var vid = document.getElementById("Trailer")
 	if (GoT_showing) {
 		GoT_showing = false
-		img.src = "images/Cobra.jpg"
-		vid.src = "https://www.youtube.com/embed/x8eRMQtjCBE"
-		//alert('This dojo has been taken over by COBRA KAI')
+		$("#banner").height(830)
+		img.src = "images/"+name+".jpg"
+		alert(message)
+		vid.src = "https://www.youtube.com/embed/xCwwxNbtK6Y"
+		
 	} else {
 		GoT_showing = true
-		img.src = "images/dubrovnik.jpg"
+		$("#banner").height(230)
+		img.src = "images/"+home+".jpg"
+		alert('The great houses of Westeros have succesfully reclaimed their dominion.')
 		vid.src = "https://www.youtube.com/embed/KPLWWIOCOOQ"
-		//alert('The great houses of Westeros have succesfully reclaimed their dominion.')
+		
 	}
 
 	
 }
+
+
+
 
 //Adjust Box Sizes by longest box
 function boxheight() {
