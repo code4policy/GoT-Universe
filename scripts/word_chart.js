@@ -184,7 +184,7 @@ function update(data, seas_num) {
 		.attr("y", function(d) {return y(d.name); })
 		.attr("width", function(d) {return x(d.word_tot); })
 		.attr("height", y.bandwidth())
-		.attr("fill", "#69b3a2");
+		.attr("fill", "#8b0000");
 
 	// If less group in the new dataset, I delete the ones not in use anymore
 	u
