@@ -53,7 +53,7 @@ svg.append("g")
 
 // Build color scale
 var myColor = d3.scaleLinear()
-	.range(["white", "#69b3a2"])
+	.range(["white", "#8b0000"])
 	.domain([1,50])
 
 //Read the data
