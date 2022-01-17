@@ -1,4 +1,4 @@
-# This script, mainly completed by Alan, helps strip out information
+# This script helps strip out information
 # from a death database csv to determine where deaths occurred by episode
 # it then writes a dictionary and then populates another csv  
 
