@@ -1,7 +1,16 @@
-
-//https://www.d3-graph-gallery.com/graph/heatmap_style.html
-//https://www.d3-graph-gallery.com/graph/heatmap_tooltip.html
-
+//
+// heatmap.py
+//
+// Author: Alan Burwell
+// Last updated: 13 Jan 22
+//
+// DPI691MA, Group A4, Game of Thrones
+//
+// Code combined from two primary tutorials: 
+// https://www.d3-graph-gallery.com/graph/heatmap_style.html
+// https://www.d3-graph-gallery.com/graph/heatmap_tooltip.html
+//
+// This code takes an input csv of a matrix of scene interactions between two identical lists of characters, and displays a heatmap with mouseover tooltip displaying the number of shared scenes the combination has had. 
 
 
 // set the dimensions and margins of the graph
@@ -18,22 +27,8 @@ var svg = d3.select("#heatmap_chart")
 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // Labels of row and columns
-//var myGroups = ["A", "B", "C", "D", "E"]
-//var myVars = ["A", "B", "C", "D", "E"]
 var myGroups = ['Arya Stark','Brienne of Tarth','Bronn','Cersei Lannister','Daenerys Targaryen','Davos Seaworth','Jaime Lannister','Jon Snow','Jorah Mormont','Lord Varys','Olenna Tyrell','Petyr Baelish','Robb Stark','Samwell Tarly','Sandor Clegane','Sansa Stark','Stannis Baratheon','Theon Greyjoy','Tyrion Lannister','Tywin Lannister']
 var myVars = ['Arya Stark','Brienne of Tarth','Bronn','Cersei Lannister','Daenerys Targaryen','Davos Seaworth','Jaime Lannister','Jon Snow','Jorah Mormont','Lord Varys','Olenna Tyrell','Petyr Baelish','Robb Stark','Samwell Tarly','Sandor Clegane','Sansa Stark','Stannis Baratheon','Theon Greyjoy','Tyrion Lannister','Tywin Lannister']
-
-// // Build X scales and axis:
-// var x = d3.scaleBand()
-// 	.range([ 0, width ])
-// 	.domain(myGroups)
-// 	.padding(0.01);
-// svg.append("g")
-// 	.style("font-size", 15)
-// 	.attr("transform", "translate(0," + height + ")")
-// 	.call(d3.axisBottom(x).tickSize(0))
-// 	//.attr("transform", "rotate(-65)")
-// 	.select(".domain").remove()
 
 // Build X scales and axis:
 var x = d3.scaleBand()
@@ -91,6 +86,7 @@ d3.csv("data/scene_interactions.csv", function(data) {
 		//console.log(d3.event.pageX)
 
 		tooltip
+			// mouse tooltip was a pain, leaving different calling options attempted as future reference
 			.html("" + d.value + " shared scenes")
 			//.attr("x", 200)
 			//.attr("y", 200)
@@ -104,8 +100,6 @@ d3.csv("data/scene_interactions.csv", function(data) {
 			//.style("top", (d3.event.pageY + d3.select('svg').node().getBoundingClientRect().y) + "px")
 			//.attr("transform", "translate(" + (d3.mouse(this)[0]  + 20) + "," + (d3.mouse(this)[0] - 20) + ")");
 	}
-
-
 
 	var mouseleave = function(d) {
 		tooltip
@@ -132,24 +126,4 @@ d3.csv("data/scene_interactions.csv", function(data) {
 		.on("mousemove", mousemove)
 		.on("mouseleave", mouseleave)
 })
-
-
-// // Add title to graph
-// svg.append("text")
-//         .attr("x", 0)
-//         .attr("y", -30)
-//         .attr("text-anchor", "left")
-//         .style("font-size", "22px")
-//         .style("fill", "black")
-//         .text("Game of Thrones Interactions");
-
-// // Add subtitle to graph
-// svg.append("text")
-//         .attr("x", 0)
-//         .attr("y", -15)
-//         .attr("text-anchor", "left")
-//         .style("font-size", "14px")
-//         .style("fill", "grey")
-//         .style("max-width", 400)
-//         .text("Who shares screentime by total shared scenes");
 

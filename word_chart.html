@@ -46,7 +46,7 @@
 
 	<br><br>
 
-	<div class="chart_title">Who is the Most Important Game of Thrones Character?</div>
+	<div class="chart_title">Tyrion Lannister, the Most Important Game of Thrones Character?</div>
 	<div id="which_season" class="chart_sub_title"></div>
 
 	<button class="word_butt" onclick="update(data_all, 0)">All Seasons</button>
@@ -66,9 +66,11 @@
 
 	<br><br><br>
 	
+	<!-- Generate word chart -->
 	<script src="scripts/word_chart.js"></script>
 
 	<script>
+		// This snippet has to be in html ... calls function after a short delay. Can't figure out why it doesn't actually call when at the bottom of the word_chart.js script ... but after hours of troubleshooting, this works well enough.
 		setTimeout(function(){
 			update(data_all, 0)
 		}, 150); 
