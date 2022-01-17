@@ -7,7 +7,7 @@
 	<link href="styles/styles.css" rel="stylesheet">
 	<title>Main Characters</title>
 	
-
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
  	<script src="https://d3js.org/d3.v4.js"></script>
 
 </head>
@@ -39,7 +39,9 @@
 	<h1 class="header"><br>
 		Main Characters
 	</h1>
-
+<div class="image" >
+		<img id="banner" src="images/Tyrion.jpg"  onclick="changeImage('Borg','Oh no, the Borg have arrived! You are going to assimiliated. Resistance is futile.','Tyrion')">
+	</div>
 	<br><br>
 
 	<div>The Game of Thrones Universe is considered epic high fantasy, which features a sprawling universe and multitude of characters.  It can be difficult to know who the "main" character might be. In fact, througth 73 episodes and 8 seasons of the HBO TV series, 817 characters had speaking parts. Browse below to see which character might be considered the most important per season, based on how many words were spoken. Are you surprised that a Lannister is arguably the most important character in every season?</div>
@@ -68,7 +70,7 @@
 	
 	<!-- Generate word chart -->
 	<script src="scripts/word_chart.js"></script>
-
+	<script src="scripts/main.js"></script>
 	<script>
 		// This snippet has to be in html ... calls function after a short delay. Can't figure out why it doesn't actually call when at the bottom of the word_chart.js script ... but after hours of troubleshooting, this works well enough.
 		setTimeout(function(){

@@ -15,7 +15,7 @@ function changeImage(name, message,home) {
 		
 	} else {
 		GoT_showing = true
-		$("#banner").height(230)
+		$("#banner").height(227)
 		img.src = "images/"+home+".jpg"
 		alert('The great houses of Westeros have succesfully reclaimed their dominion.')
 		vid.src = "https://www.youtube.com/embed/KPLWWIOCOOQ"
