@@ -54,7 +54,7 @@ svg.append("g")
 // Build color scale
 var myColor = d3.scaleLinear()
 	.range(["white", "#8b0000"])
-	.domain([1,50])
+	.domain([1,75])
 
 //Read the data
 d3.csv("data/scene_interactions.csv", function(data) {
